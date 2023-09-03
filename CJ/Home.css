@@ -1,0 +1,59 @@
+body
+{
+  overflow-x: hidden;
+}
+.bor
+{
+  transition: 0.5s;
+}
+.bor::after
+{
+
+  display: block;
+  content: '';
+  border-bottom: solid 3px #050040;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.bor:hover::after
+{
+  transform: scaleX(1);
+}
+.bor:hover:after
+{
+  transform-origin: 0% 50%;
+}
+button
+{
+  
+  transition: all 0.3s ease 0s;
+}
+button:hover
+{
+  opacity: 0.8;
+  
+  /* box-shadow: 0px 15px 20px rgba(14, 6, 42, 0.4); */
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.dropdown-menu{
+  margin-top: 0;
+}
+.sh
+{
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.TRY
+{
+  transition: 0.6s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; 
+  cursor: pointer;
+}
+.TRY:hover
+{
+  transform: scale(1.01);
+}
+
+  
